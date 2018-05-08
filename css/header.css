@@ -1,0 +1,81 @@
+.header {
+    width: 100%;
+    background-color: #1D2B3B;
+    font-size: 0;
+    padding: 10px 15px;
+}
+
+.header__container-logo {
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+}
+
+.header__container-btn {
+    width: 60%;
+    height: 100%;
+    display: inline-block;
+    text-align: right;
+}
+
+.header__logo, .header__btn {
+    vertical-align: middle;
+}
+
+.header__btn {
+    border: 2px solid #FDDF01;
+    border-radius: 4px;
+    background: none;
+    padding: 5px;
+    font-size: 13px;
+}
+
+.header__btn-icon {
+    padding-right: 5px;
+    display: none;
+}
+
+.header__btn:active {
+    outline: none;
+    background-color: rgba(164, 198, 88, 0.5);
+}
+
+@media screen and (min-width: 450px) {
+    .header__btn-icon {
+        display: inline-block;
+    }
+
+    .header__btn {
+        border: 2px solid #FDDF01;
+        background: none;
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .header__btn {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1021px) {
+    .header__btn {
+        padding: 10px;
+        font-size: 21px;
+    }
+
+    .header{
+        padding: 15px 0px;
+    }
+
+    .header__btn:hover {
+        background-color: rgba(164, 198, 88, 0.5);
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .header__btn {
+        padding: 10px;
+        font-size: 24px;
+    }
+}

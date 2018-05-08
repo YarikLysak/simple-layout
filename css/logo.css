@@ -1,0 +1,35 @@
+.logo {
+    font-size: 0;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.logo__text {
+    font-size: 22px;
+}
+
+.logo__text--footer {
+    font-size: 20px;
+}
+
+@media screen and (min-width: 700px) {
+    .logo__text {
+        font-size: 39px;
+    }
+
+    .logo__text--footer {
+        font-size: 37px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .logo__text {
+        font-size: 50px;
+    }
+
+    .logo__text--footer {
+        font-size: 40px;
+    }
+
+}

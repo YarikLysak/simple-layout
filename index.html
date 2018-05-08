@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <title>Title</title>
+        <link rel = "stylesheet" href = "css/import.css">
+    </head>
+    <body>
+        <header class = "header wrapper" id = "header">
+            <div class = "header__container-logo ">
+                <a href = "/" class = "logo header__logo">
+                    <span class = "logo__text yellow">Your</span>
+                    <span class = "logo__text white">Logo</span>
+                </a>
+            </div>
+            <div class = "header__container-btn">
+                <button class = "btn header__btn">
+                    <i class = "header__btn-icon white icon-graduation-cap"> </i>
+                    <span class = "yellow">button</span>
+                </button>
+            </div>
+        </header>
+        
+        <div class = "nav-block" id = "nav-block">
+            <div class = "menu-button" id = "menu-button"><i class = "icon-menu"></i></div>
+            
+            <div class = "nav-tab_content wrapper" id = "nav-tab_content">
+                <div class = "close-menu">
+                    <i class = "icon-cancel close-menu_button" id = "close-menu_button"></i>
+                </div>
+                <div class = "speed-bar"><i class = "icon-speed-bar"></i></div>
+                <ul class = "nav-list">
+                    <li class = "nav-tab"><a href = "#">Home</a></li>
+                    <li class = "nav-tab"><a href = "#">Information</a></li>
+                    <li class = "nav-tab"><a href = "#">JoinUs</a></li>
+                    <li class = "nav-tab"><a href = "#">Contacts</a></li>
+                    <li class = "nav-tab"><a href = "#">OnMap</a></li>
+                    <li class = "nav-tab"><a href = "#">Comments</a></li>
+                </ul>
+            
+            </div>
+        
+        </div>
+        
+        <div class = "breadcrumbs wrapper" id = "breadcrumbs">
+            <ul class = "breadcrumbs__list">
+                <li class = "breadcrumbs__item">
+                    <a href = "#" class = "breadcrumbs__link">User & Regions</a>
+                </li>
+                <li class = "breadcrumbs__item breadcrumbs__link--last">
+                    <span class = "breadcrumbs__link">Edit User</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class = "title wrapper">
+            <h1 class = "title__text">The Search Dawgs</h1>
+        </div>
+        
+        <div class = "tabs wrapper">
+            <div class = "tab__inner">
+                <div class = "tab__buttons">
+                    <div class = "tab__button active" data-tab = "user_info">
+                        <span class = "tab__name">User Information</span>
+                    </div>
+                    <div class = "tab__button" data-tab = "region">
+                        <span class = "tab__name">Region</span> <span class = "tab__info"></span>
+                    </div>
+                </div>
+                
+                <div class = "tabs__content">
+                    <div class = "tab__content tab__content-user-info active" data-tab = "user_info">
+                        <span class = "required">* Required</span>
+                        <div class = "tab__content-items">
+                            <label for = "company-name" class = "tab__content-label">
+                                <span>Company Name:*</span>
+                            </label>
+                            <input type = "text" id = "company-name" class = "tab__content-field" value = "Bob John">
+                        </div>
+                        <div class = "tab__content-items">
+                            <label for = "company-url" class = "tab__content-label">
+                                <span>Company URL:*</span>
+                            </label>
+                            <input type = "text" id = "company-url" class = "tab__content-field"
+                                   value = "http://qwerty.com">
+                        </div>
+                        <div class = "tab__content-items">
+                            <label for = "buisness-category" class = "tab__content-label">
+                                <span>Business Category:*</span>
+                            </label>
+                            <select id = "buisness-category" class = "tab__content-field">
+                                <option value = "Law">Law</option>
+                            </select>
+                        </div>
+                        <div class = "tab__content-items">
+                            <label for = "user-reference" class = "tab__content-label">
+                                <span>Unique User Reference:*</span>
+                            </label>
+                            <select id = "user-reference" class = "tab__content-field">
+                                <option value = "123456789">123456789</option>
+                            </select>
+                        </div>
+                        <div class = "tab__content-items">
+                            <label for = "location" class = "tab__content-label">
+                                <span>State/Country/Region:*</span>
+                            </label>
+                            <select id = "location" class = "tab__content-field">
+                                <option value = "Region">Region</option>
+                            </select>
+                        </div>
+                    
+                    </div>
+                    <div class = "tab__content tab__content-region" data-tab = "region">
+                        <h2 class = "tab__content-region-title">Assigned regions</h2>
+                        <span class = "tab__content-region-info">
+                        The regions in the table below are currently assigned to this user. You can un-assign them using the checkbox in the 'Assigned' column.
+                    </span>
+                        <table class = "table">
+                            <thead>
+                                <tr class = "table__row" id = "test">
+                                    <th class = "table__cell table__cell--heading">Unassign</th>
+                                    <th class = "table__cell table__cell--heading with-sorting desc">Region</th>
+                                    <th class = "table__cell table__cell--heading with-sorting">Reference</th>
+                                    <th class = "table__cell table__cell--heading">City</th>
+                                    <th class = "table__cell table__cell--heading">Postal Code</th>
+                                    <th class = "table__cell table__cell--heading">Existing User</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class = "table__row">
+                                    <td class = "table__cell" align = "center">
+                                        <input type = "checkbox">
+                                    </td>
+                                    <td class = "table__cell">Region 1</td>
+                                    <td class = "table__cell">789456</td>
+                                    <td class = "table__cell">Bogner</td>
+                                    <td class = "table__cell">13465</td>
+                                    <td class = "table__cell">The Search Dawgs</td>
+                                </tr>
+                                <tr class = "table__row">
+                                    <td class = "table__cell" align = "center">
+                                        <input type = "checkbox">
+                                    </td>
+                                    <td class = "table__cell">Place 2</td>
+                                    <td class = "table__cell">732654</td>
+                                    <td class = "table__cell">Brussels</td>
+                                    <td class = "table__cell">46851</td>
+                                    <td class = "table__cell">The Search Dawgs</td>
+                                </tr>
+                                <tr class = "table__row">
+                                    <td class = "table__cell " align = "center">
+                                        <input type = "checkbox">
+                                    </td>
+                                    <td class = "table__cell">Abode 3</td>
+                                    <td class = "table__cell">794613</td>
+                                    <td class = "table__cell">Bruges</td>
+                                    <td class = "table__cell">46851</td>
+                                    <td class = "table__cell">The Search Dawgs</td>
+                                </tr>
+                                <tr class = "table__row">
+                                    <td class = "table__cell" align = "center">
+                                        <input type = "checkbox">
+                                    </td>
+                                    <td class = "table__cell">Base 4</td>
+                                    <td class = "table__cell">172839</td>
+                                    <td class = "table__cell">Berlin</td>
+                                    <td class = "table__cell">BT 4 9OP</td>
+                                    <td class = "table__cell">The Search Dawgs</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class = "tab-footer">
+                        <button class = "button button--update">Update</button>
+                        <button class = "button button--cancel">Cancel</button>
+                        <button class = "button button--delete">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class = "footer wrapper" id = 'footer'>
+            <ul class = "footer-nav">
+                <li class = "footer-tabs"><a href = "#">Main Site</a></li>
+                <li class = "footer-tabs"><a href = "#">Video Guides</a></li>
+                <li class = "footer-tabs"><a href = "#">Forum</a></li>
+                <li class = "footer-tabs"><a href = "#">Webinar & Training</a></li>
+                <li class = "footer-tabs"><a href = "#">Help Centre</a></li>
+                <li class = "footer-tabs"><a href = "#">Contact Support</a></li>
+            </ul>
+            
+            <div class = "footer__container-logo ">
+                <a href = "/" class = "logo footer__logo">
+                    <span class = "logo__text yellow">Your</span>
+                    <span class = "logo__text white">Logo</span>
+                </a>
+            </div>
+        </footer>
+        
+        <script src = "js/navCollapse.js"></script>
+        <script src = "js/tabSwitcher.js"></script>
+        <script src = "js/tableWidthSorting.js"></script>
+    </body>
+</html>

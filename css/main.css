@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h2 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.yellow {
+    color: #FDDF01;
+}
+
+.white {
+    color: #FFFFFF;
+}
+
+.btn:active {
+    outline: none;
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media screen and (min-width: 1021px) {
+
+    .wrapper {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}

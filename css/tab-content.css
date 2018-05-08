@@ -1,0 +1,47 @@
+.tab__content-user-info {
+    display: none;
+    clear: both;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.tab__content-items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.tab__content-label {
+    margin-top: 25px;
+}
+
+.tab__content-field {
+    padding: 7px 5px;
+    color: #858DBD;
+    border: 1px solid #858DBD;
+    border-radius: 4px;
+    outline: none;
+}
+
+.tab__content-region.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab__content-region-title {
+    margin-top: 10px;
+    display: block;
+}
+
+.tab__content-region-info {
+    color: #A89DA2;
+    margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .tab__content-items {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+    }
+}

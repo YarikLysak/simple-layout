@@ -1,0 +1,58 @@
+.button {
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button--update {
+    background: #9FC546;
+}
+
+.button--cancel {
+    background: #D18E5E;
+}
+
+.button--delete {
+    background: #D1615E;
+}
+
+.button--update:hover {
+    background: #BCEA4F;
+}
+
+.button--cancel:hover {
+    background: #F0A46D;
+}
+
+.button--delete:hover {
+    background: #EB6E6B;
+}
+
+@media screen and (min-width: 430px) {
+    .button {
+        display: inline-block;
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+
+    .button--delete {
+        float: right;
+    }
+}
+
+@media screen and (min-width: 560px) {
+    .button {
+        padding: 15px 20px;
+        font-size: 20px;
+    }
+
+    .button--delete {
+        float: right;
+    }
+}
